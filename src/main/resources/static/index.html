@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connect Four</title>
+    <link href="/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="connect">Five In A Row</label>
+                <div class="form-group" id="endGame">
+                    
+                    <button id="disconnect" class="btn btn-default" type="submit" style="background-color: red;">End Game</button>
+                </div>
+            
+        </div>
+        <div class="row">
+            <div id="namePanel" class="col-md-6">
+         
+                    <div class="form-group">
+                        <label for="name">Enter Player Name:</label>
+                        <input type="text" id="name" placeholder="Your name here...">
+                        
+                    </div>
+                    <button class="btn btn-default" id ="enter" style="background-color: aqua;">Enter</button>
+               
+            </div>
+            
+        </div>
+       
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <table id="conversation" class="table table-striped">
+                <tbody id="gameModel">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div id="movePanel" class="col-md-12" style="display: none;">
+           
+                <div class="form-group">
+                    <label for="makeMove">Please enter column (1-9)</label>
+                    <input type="number" id="makeMove" class="form-control" min="1" max="9" maxlength="1">
+                </div>
+                <button id="playGame" class="btn btn-default" type="submit" style="background-color: red" >Play Game</button>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
